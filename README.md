@@ -6,13 +6,13 @@ Boilerplate Project 생성 및 AI Agent 연동 가이드입니다.
 
 ## 1. 리포지토리 생성
 
-GitHub에서 `com.ubisam.boilerplate.project` 리포지토리를 생성합니다.
+GitHub에서 각자 프로젝트별 (현재 예시는 `com.ubisam.boilerplate.project` 입니다) 리포지토리를 생성합니다.
 
 ---
 
 ## 2. Branch Protection Rule 설정
 
-`main` 브랜치에 아래 규칙을 추가합니다.
+생성한 프로젝트의 `main` 브랜치에 아래 규칙을 추가합니다.
 
 **Settings → Branches → Add branch ruleset**
 
@@ -29,7 +29,7 @@ GitHub에서 `com.ubisam.boilerplate.project` 리포지토리를 생성합니다
 
 ## 3. AI Agent 설치 및 Clone
 
-AI Agent가 설치된 디렉토리의 `workspace` 안에 리포지토리를 클론합니다.
+AI Agent가 설치된 디렉토리의 `workspace` 안에 해당 리포지토리를 클론합니다.
 
 ```bash
 cd <ai-agent>/workspace

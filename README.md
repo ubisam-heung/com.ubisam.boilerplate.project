@@ -10,20 +10,35 @@ GitHub에서 각자 프로젝트별 (현재 예시는 `com.ubisam.boilerplate.pr
 
 ---
 
-## 2. Branch Protection Rule 설정
+## 2. Branch Protection Ruleset 설정
 
-생성한 프로젝트의 `main` 브랜치에 아래 규칙을 추가합니다.
+생성한 프로젝트의 `main` 브랜치에 Ruleset을 추가합니다.
 
-**Settings → Branches → Add branch ruleset**
+**Settings → Rules → Rulesets → New branch ruleset**
+
+### 기본 설정
+
+| 항목 | 값 |
+|---|---|
+| Ruleset Name | `main` |
+| Enforcement status | **Active** ⚠️ (기본값 Disabled → 반드시 변경) |
+
+### Target branches
+
+**Add target → Default branch** 를 선택합니다.
+
+### Branch rules 체크 항목
 
 | 항목 | 설정 |
 |---|---|
+| Restrict deletions | ✅ |
 | Require a pull request before merging | ✅ |
-| Require branches to be up to date before merging | ✅ |
-| Require conversation resolution before merging | ✅ |
-| Do not allow bypassing the above settings | ✅ |
+| Block force pushes | ✅ |
 
-설정 후 **Save** 합니다.
+> **Require a pull request before merging** 선택 시 하위 옵션이 펼쳐집니다.  
+> Required approvals는 `0`으로 두면 승인 없이 본인이 직접 merge 가능합니다.
+
+설정 후 **Create** 버튼을 클릭합니다.
 
 ---
 
